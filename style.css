@@ -1,0 +1,89 @@
+/*                    GENERAL                     */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section { 
+  background-color: thistle;
+}
+
+.header {
+    padding: 20px 10px;
+    background-color: teal;
+   
+}
+  
+  .footer {
+    background: rgb(52, 90, 52);
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    padding: 30px;
+    bottom:0
+    }
+  
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color:red;
+  }
+
+.cards {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 2fr); }
+}
+
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+#new {
+  border-style: solid;
+  border-color: coral;
+}
+
+#dead {
+  border-style: solid;
+  border-color: red
+}
+
+#recover {
+  border-style: solid;
+  border-color: blue
+}
+
+#hosp {
+  border-style: solid;
+  border-color: yellow
+}
+
+#total {
+  border-style: solid;
+  border-color: black
+}
+
+#deathTotal{
+  border-style: solid;
+  border-color:firebrick
+}
