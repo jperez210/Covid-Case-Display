@@ -6,16 +6,6 @@
     box-sizing: border-box;
 }
 
-section { 
-  background-color: thistle;
-}
-
-.header {
-    padding: 20px 10px;
-    background-color: teal;
-   
-}
-  
   .footer {
     background: rgb(52, 90, 52);
     text-align: center;
@@ -46,8 +36,6 @@ section {
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
-
 
 @media (min-width: 900px) {
   .cards { grid-template-columns: repeat(3, 2fr); }
@@ -86,4 +74,13 @@ section {
 #deathTotal{
   border-style: solid;
   border-color:firebrick
+}
+
+header img{
+  width: 130px;
+  vertical-align: top
+}
+
+h1{
+  text-align: center;
 }
