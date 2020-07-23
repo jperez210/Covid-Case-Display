@@ -5,8 +5,7 @@ $(document).ready(function () {
       var confirmed = [];
       var recovered = [];
       var deaths = [];
-      
-  
+    
     
       // The each loop select a single statewise array element
       // Take the data in that array and add it to variables
@@ -21,7 +20,6 @@ $(document).ready(function () {
     deaths.reverse();
 
    
-
     //chart
       var ctx = document.getElementById("myChart").getContext("2d");
       var myChart = new Chart(ctx, {
