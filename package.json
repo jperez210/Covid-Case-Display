@@ -1,0 +1,24 @@
+{
+  "name": "texascovid",
+  "version": "1.0.0",
+  "description": "Tracking site that displays current Covid-19 data for the state of Texas.",
+  "main": "index.js",
+  "dependencies": {
+    "datejs": "^1.0.0-rc3",
+    "chart.js": "^2.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jperez210/TexasCovid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jperez210/TexasCovid/issues"
+  },
+  "homepage": "https://github.com/jperez210/TexasCovid#readme"
+}

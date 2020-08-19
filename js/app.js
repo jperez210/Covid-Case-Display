@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Get JSON data from url
-    $.getJSON("https://covidtracking.com/api/v1/states/tx/daily.json", function (data) {
+    $.getJSON("https://cors-anywhere.herokuapp.com/https://covidtracking.com/api/v1/states/tx/daily.json", function (data) {
       var dates = [];
       var confirmed = [];
       var recovered = [];
@@ -51,7 +51,7 @@ let total_deaths = document.getElementById("total_deaths");
 let new_deaths = document.getElementById("new_deaths");
 
 
-fetch("https://covidtracking.com/api/v1/states/tx/current.json")       
+fetch("https://cors-anywhere.herokuapp.com/https://covidtracking.com/api/v1/states/tx/current.json")
 .then(response => response.json().then( data => {
     console.log(data);
     total_case.innerHTML = data.positive;
