@@ -5,15 +5,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+.main{
+  padding: 40px;
+}
 
-  .footer {
+html,body{
+  height: 100%;
+  position: relative;
+}
+.main-container {
+  min-height: 100vh; 
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; 
+ }
+
+  footer {
     background: rgb(52, 90, 52);
     text-align: center;
     width: 100%;
     font-size: 24px;
-    padding: 30px;
-    bottom:0
-    }
+    padding-top: 25px;
+    bottom: 0;
+    position: absolute;
+  }
   
   h2 {
     font-size: 25px;
@@ -26,25 +42,25 @@
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
-  padding: 1rem;
+  padding: 5rem;
 }
 
 .card {
-  background-color: white;
-  color: black;
   padding: 1rem;
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 @media (min-width: 900px) {
-  .cards { grid-template-columns: repeat(3, 2fr); }
+  .cards { grid-template-columns: repeat(3, 2fr); 
+  }
 }
 
-@media (min-width: 600px) {
-  .cards { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 674px) {
+  .cards { 
+    grid-template-columns: repeat(3, 1fr); 
+  }
 }
-
 
 #new {
   border-style: solid;

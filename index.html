@@ -1,75 +1,59 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-        <script src="https://kit.fontawesome.com/893a019cfa.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-        
-
-        <title>Corona</title>
-    </head>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://kit.fontawesome.com/893a019cfa.js" crossorigin="anonymous"></script>
+      <title>COVID-19 Cases</title>
+  </head>
 <body>
-
-<header>
-  <a href="https://jperez210.github.io/TexasCovid/"><img src="texaslogo.jpg" alt="logo" /></a>
-</header>
-      <section class="main">
-        <h1>  Texas COVID-19 Cases</h1>
+  <div class="main-container">
+  <header>
+    <a href="https://jperez210.github.io/TexasCovid/"><img src="texaslogo.jpg" alt="logo" /></a>
+  </header>
+    <section class="main">
+      <h1>  Texas COVID-19 Cases</h1>
         <div class="cards" >
-            <div class="card" id="total">
-              <h1>Total Cases</h1>
-              <p id="total_case"> </p>
-              <small>Total number of people who have tested positive for COVID-19 so far.
-
-              </small>
-          
+          <div class="card" id="total">
+            <h1>Total Cases</h1>
+            <p id="total_case"> </p>
+            <small>Total number of people who have tested positive.</small>  
+          </div>
+        <div class="card" id="new">
+            <h1>New Cases</h1>
+            <p id="new_case"> </p>
+            <small>Daily difference in positive cases.</small>
+        </div>
+          <div class="card" id="hosp">
+            <h1>Hospitalized</h1>
+            <p id="current_hospital"> </p>
+            <small>Number of people hospitalized.</small>
+          </div>
+          <div class="card" id="recover">
+            <h1>Recovered</h1>
+            <p id="total_recover"> </p>
+            <small>Total number of people who have recovered.</small>
+          </div>
+            <div class="card" id="dead">
+              <h1>Deaths</h1>
+              <p id="total_deaths"></p>
+                <small>Total number of people who have died.</small> 
             </div>
-            <div class="card" id="new">
-              <h1>New Cases</h1>
-              <p id="new_case"> </p>
-              <small>Daily difference in positive</small>
-            
-            </div>
-            <div class="card" id="hosp">
-              <h1>Hospitalized</h1>
-              <p id="current_hospital"> </p>
-              <small>Number of people in hospital for COVID-19 on this day.</small>
-             
-            </div>
-            <div class="card" id="recover">
-              <h1>Recovered</h1>
-              <p id="total_recover"> </p>
-              <small>Total number of people who have recovered from COVID-19 so far.</small>
-            </div>
-              <div class="card" id="dead">
-                <h1>Deaths</h1>
-                <p id="total_deaths"></p>
-                  <small>Total number of people who have died as a result of COVID-19 so far.</small> 
-              </div>
               <div class="card" id="deathTotal">
                 <h1>New Deaths</h1>
                 <p id="new_deaths"></p>
                   <small>Daily difference in deaths.</small>
               </div>  
         </div>
-        
-       <br>       
-    <h1 style="text-align: center;">Statewide Deaths Over Time</h1>
-    <div class="chart-container" style="position: relative; height:50%; width:100%">
-        <canvas id="myChart"></canvas>
-      </div>
-
-    </section>      
+</section>      
     
-<div class="footer">      
+<footer>      
     <p> This webpage updates daily at 5:00 PM Central Time</p>
     <p> Data taken from https://covidtracking.com/data/api  </p>
+</footer>
 </div>
-
-  <script src="js/app.js"></script>
-  </body>
+<script src="js/app.js"></script>
+</body>
 </html>
