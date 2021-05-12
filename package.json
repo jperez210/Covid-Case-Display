@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "datejs": "^1.0.0-rc3",
-    "chart.js": "^2.9.3"
+    "chart.js": "^2.9.4"
   },
   "devDependencies": {},
   "scripts": {
